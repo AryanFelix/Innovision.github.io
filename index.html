@@ -1,37 +1,333 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Innovision : The Premier Tech Club in North-East India</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="index.scss">
-</head>
-<body>
-    <div id="fullpage">
-        <div class="section s1">Section 1</div>
-          <div class="slide">Slide 1</div>
-          <div class="slide">Slide 2</div>
-          <div class="slide">Slide 3</div>
-        </div>
-        <div class="section s2">Section 2</div>
-          <div class="slide">Slide 1</div>
-          <div class="slide">Slide 2</div>
-          <div class="slide">Slide 3</div>
-        </div>
-        <div class="section s3">Section 3</div>
-          <div class="slide">Slide 1</div>
-          <div class="slide">Slide 2</div>
-          <div class="slide">Slide 3</div>
-        </div>
-    </div>
-    <div class="section fp-auto-height">
+<html>
+	<head>
+		<title>
+			Innovision | Innovate! Automate! Design! Play!
+		</title>
 
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
-    <script>
-        new fullpage('#fullpage', {
-            autoScrolling: true
-        })
-    </script>
-</body>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.onepage-scroll.js"></script>
+	<link href='scripts/onepage-scroll.css' rel='stylesheet' type='text/css'>
+	<link href='index.css' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	</head>
+	<body>
+		<style>
+			.opaque-navbar .container .navbar-header >a{
+			color:#fff;
+			text-transform:uppercase;
+			font-weight:bold;
+			}
+			.opaque-navbar .container .navbar-collapse >ul >li >a{
+			color:#fff;
+			text-transform:uppercase;
+			font-weight:700;
+			}
+
+			.opaque-navbar{
+			background-color:rgba(0,0,0,0);
+			border-bottom:1px solid #eee;
+			
+			transition : background-color 0.5s ease 0s;
+			}
+			.opaque-navbar.opaque {
+				background-color:black ;
+				border:0px;    
+				transition: background-color .5s ease 0s;
+			}
+			ul.dropdown-menu {
+				background-color: black;
+			}
+		</style>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+			  <div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNav">
+		  <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+						  </button>
+					<a class="navbar-brand page-scroll" href="index.html">S.M.I.T</a> 
+			 </div>
+			  <div class="collapse navbar-collapse" id="myNav">
+				<ul class=" nav navbar-nav pull-right">
+				  <li><a href="#about" class="page-scroll">About</a></li>
+				  <li><a href="#portfolio" class="page-scroll">Team</a></li>
+				  <li><a href="#contact" class="page-scroll">Contact</a></li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		<div class="main">
+		  <section class = "secone">
+			  <style>
+				  *{
+						margin: 0px;
+						padding: 0px;
+					}
+
+					body{
+						font-family: 'Montserrat', sans-serif;
+					}
+
+
+					.context {
+						width: 100%;
+						position: absolute;
+						top: 40vh;
+						
+					}
+
+					.context h1{
+						text-align: center;
+						color: #fff;
+						font-size: 50px;
+					}
+
+
+					.area{
+						background-image: linear-gradient(to top,#c31432, #240b36);;  
+						background: -webkit-linear-gradient(to left,#c31432, #240b36);  
+						width: 100%;
+						height:100vh;
+						
+					
+					}
+
+					.circles{
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						overflow: hidden;
+					}
+
+					.circles li{
+						position: absolute;
+						display: block;
+						list-style: none;
+						width: 20px;
+						height: 20px;
+						background: rgba(255, 255, 255, 0.2);
+						animation: animate 25s linear infinite;
+						bottom: -150px;
+						
+					}
+
+					.circles li:nth-child(1){
+						left: 25%;
+						width: 80px;
+						height: 80px;
+						animation-delay: 0s;
+					}
+
+
+					.circles li:nth-child(2){
+						left: 10%;
+						width: 20px;
+						height: 20px;
+						animation-delay: 2s;
+						animation-duration: 12s;
+					}
+
+					.circles li:nth-child(3){
+						left: 70%;
+						width: 20px;
+						height: 20px;
+						animation-delay: 4s;
+					}
+
+					.circles li:nth-child(4){
+						left: 40%;
+						width: 60px;
+						height: 60px;
+						animation-delay: 0s;
+						animation-duration: 18s;
+					}
+
+					.circles li:nth-child(5){
+						left: 65%;
+						width: 20px;
+						height: 20px;
+						animation-delay: 0s;
+					}
+
+					.circles li:nth-child(6){
+						left: 75%;
+						width: 110px;
+						height: 110px;
+						animation-delay: 3s;
+					}
+
+					.circles li:nth-child(7){
+						left: 35%;
+						width: 150px;
+						height: 150px;
+						animation-delay: 7s;
+					}
+
+					.circles li:nth-child(8){
+						left: 50%;
+						width: 25px;
+						height: 25px;
+						animation-delay: 15s;
+						animation-duration: 45s;
+					}
+
+					.circles li:nth-child(9){
+						left: 20%;
+						width: 15px;
+						height: 15px;
+						animation-delay: 2s;
+						animation-duration: 35s;
+					}
+
+					.circles li:nth-child(10){
+						left: 85%;
+						width: 150px;
+						height: 150px;
+						animation-delay: 0s;
+						animation-duration: 11s;
+					}
+
+
+
+					@keyframes animate {
+
+						0%{
+							transform: translateY(0) rotate(0deg);
+							opacity: 1;
+							border-radius: 0;
+						}
+
+						100%{
+							transform: translateY(-1000px) rotate(720deg);
+							opacity: 0;
+							border-radius: 50%;
+						}
+
+					}
+			  </style>
+			    <div class="context">
+					<h1>Innovision</h1>
+				</div>
+				<div class="area" >
+					<style>
+						.text-js{
+						opacity: 0;
+						}
+						.cursor{
+						display: block;
+						position: absolute;
+						height: 10%;
+						top: 420px;
+						right: -5px;
+						width: 2px;
+						/* Change colour of Cursor Here */
+						background-color: white;
+						z-index: 1;
+						animation: flash 0.5s none infinite alternate;
+						}
+						h3 {
+							padding-top: 400px;
+						}
+						@keyframes flash{
+						0%{
+							opacity: 1;
+						}
+						100%{
+							opacity: 0;
+						}
+						}
+					</style>
+					<script>
+						function autoType(elementClass, typingSpeed){
+						var thhis = $(elementClass);
+						thhis.css({
+							"position": "relative",
+							"display": "inline-block"
+						});
+						thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+						thhis = thhis.find(".text-js");
+						var text = thhis.text().trim().split('');
+						var amntOfChars = text.length;
+						var newString = "";
+						thhis.text("|");
+						setTimeout(function(){
+							thhis.css("opacity",1);
+							thhis.prev().removeAttr("style");
+							thhis.text("");
+							for(var i = 0; i < amntOfChars; i++){
+							(function(i,char){
+								setTimeout(function() {        
+								newString += char;
+								thhis.text(newString);
+								},i*typingSpeed);
+							})(i+1,text[i]);
+							}
+						},1500);
+						}
+	
+						$(document).ready(function(){
+						// Now to start autoTyping just call the autoType function with the 
+						// class of outer div
+						// The second paramter is the speed between each letter is typed.   
+						autoType(".type-js",200);
+						});
+					</script>
+					<div class="type-js headline">
+						<h3 class="text-js" style="color: white; font-size: 40px;">Innovate! Automate! Design! Play!</h3>
+					</div>
+					<ul class="circles">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+					</ul>
+				</div >
+				
+		  </section>
+		  <section>...</section>
+		  <section>...</section>
+		  <section>...</section>
+		  <section>...</section>
+		  <section>...</section>
+		</div>
+		<script>
+			$(".main").onepage_scroll({
+				sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
+				easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
+													// "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+				animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
+				pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+				updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+				beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
+				afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
+				loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+				keyboard: true,                  // You can activate the keyboard controls
+				responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
+													// you want the responsive fallback to be triggered. For example, set this to 600 and whenever
+													// the browser's width is less than 600, the fallback will kick in.
+				direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".  
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+			
+			// Fakes the loading setting a timeout
+			setTimeout(function() {
+				$('body').addClass('loaded');
+			}, 3500);
+
+			});
+		</script>
+	</body>
+</html>

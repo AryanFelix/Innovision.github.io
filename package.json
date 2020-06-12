@@ -1,20 +1,24 @@
 {
   "name": "innovision.github.io",
   "version": "1.0.0",
-  "description": "Website of Innovision Club of SMIT",
+  "description": "Innovision Website",
   "main": "index.html",
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AryanFelix/Innovision.github.io.git"
+  },
   "author": "AryanFelix",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AryanFelix/Innovision.github.io/issues"
+  },
+  "homepage": "https://github.com/AryanFelix/Innovision.github.io#readme",
   "dependencies": {
-    "bootstrap": "^4.5.0",
-    "fullpage.js": "^3.0.8",
-    "jquery": "^3.5.1",
-    "lite-server": "^2.5.4",
-    "popper.js": "^1.16.1"
+    "lite-server": "^2.5.4"
   }
 }
